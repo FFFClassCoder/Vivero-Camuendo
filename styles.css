@@ -141,7 +141,7 @@ body {
     right: 0;
     width: 50%;
     height: 100%;
-    background: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&h=600&fit=crop') center/cover;
+    background: url('images/fondo.jpg') center/cover;
 }
 
 .hero-overlay {
@@ -418,11 +418,89 @@ section {
     }
 }
 
-/* Footer */
-.footer {
+/* Beneficios */
+.beneficios {
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.beneficio-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px);
+}
+
+.beneficio-card i {
+    font-size: 3rem;
+    color: #4a7c59;
+    margin-bottom: 1rem;
+}
+
+.beneficio-card h3 {
+    color: #2d5a2d;
+    margin-bottom: 1rem;
+}
+
+/* Testimonios */
+.testimonios {
     background: #2d5a2d;
     color: white;
-    padding: 3rem 0 1rem;
+    padding: 100px 0;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonio-card {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.testimonio-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonio-card cite {
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+/* Contacto CTA */
+.contacto-cta {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.contacto-cta h3 {
+    color: #ffeb3b;
+    margin-bottom: 1rem;
+}
+
+.contacto-cta p {
+    margin-bottom: 2rem;
 }
 
 .footer-content {
