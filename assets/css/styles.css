@@ -1,16 +1,17 @@
 :root {
     --bg: #F5F5F5;
     --text: #2C2C2C;
-    --text-muted: #5F5F5F;
+    --text-muted: #4F4F4F;
+    --dark: #111111;
     --primary: #2E7D32;
     --secondary: #66BB6A;
     --tertiary: #6D4C41;
     --accent: #FBC02D;
     --accent-soft: #E8F5E9;
     --surface: #FFFFFF;
-    --surface-soft: #F5F5F5;
+    --surface-soft: #F8F8F2;
     --surface-strong: #FFFFFF;
-    --shadow: rgba(44, 44, 44, 0.14);
+    --shadow: rgba(44, 44, 44, 0.16);
     --white: #FFFFFF;
 }
 
@@ -65,8 +66,9 @@ h1, h2, h3, h4, h5, h6, .btn {
 }
 
 .top-bar a {
-    color: var(--text-muted);
+    color: var(--dark);
     text-decoration: none;
+    font-weight: 500;
 }
 
 .top-bar a:hover {
@@ -217,7 +219,7 @@ h1, h2, h3, h4, h5, h6, .btn {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(46, 125, 50, 0.35);
+    background: rgba(0, 0, 0, 0.18);
 }
 
 .hero-buttons {
@@ -266,7 +268,7 @@ h1, h2, h3, h4, h5, h6, .btn {
     align-items: center;
     gap: 0.6rem;
     background: var(--accent);
-    color: var(--text);
+    color: var(--dark);
     padding: 0.9rem 1.4rem;
     border-radius: 999px;
     text-decoration: none;
@@ -274,7 +276,7 @@ h1, h2, h3, h4, h5, h6, .btn {
 }
 
 .btn-whatsapp:hover {
-    background: #d4a80b;
+    background: #c89b08;
 }
 
 .search-form {
@@ -550,7 +552,7 @@ section {
 }
 
 .contacto-form button:hover {
-    background: #e55a2b;
+    background: #d4a80b;
     transform: translateY(-2px);
 }
 
@@ -627,6 +629,12 @@ section {
     color: rgba(255, 255, 255, 0.92);
 }
 
+.footer {
+    background: var(--primary);
+    color: var(--white);
+    padding: 4rem 0 2rem;
+}
+
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -646,7 +654,7 @@ section {
 }
 
 .footer-brand h3 {
-    color: var(--accent-soft);
+    color: var(--white);
     margin-bottom: 0.5rem;
 }
 
@@ -657,7 +665,7 @@ section {
 }
 
 .footer-links a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -684,8 +692,8 @@ section {
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 992px) {
