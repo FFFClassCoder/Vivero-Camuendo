@@ -1,172 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vivero Camuendo</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Poppins',sans-serif;background:#f4f7f5;color:#333;}
-
-header{
-position:fixed;
-top:0;width:100%;
-background:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-box-shadow:0 2px 15px rgba(0,0,0,0.1);
-z-index:1000;
-}
-
-header img{width:60px;}
-nav a{margin:0 15px;text-decoration:none;color:#2e7d32;font-weight:500;}
-
-.hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e') center/cover;
-display:flex;flex-direction:column;justify-content:center;align-items:center;
-color:white;text-align:center;padding:20px;
-}
-
-.hero h1{font-size:55px;margin-bottom:10px;}
-.hero p{font-size:18px;margin-bottom:20px;}
-
-.btn{
-background:#4caf50;
-padding:14px 30px;
-border-radius:30px;
-color:white;
-text-decoration:none;
-font-weight:600;
-transition:0.3s;
-}
-.btn:hover{background:#388e3c;}
-
-section{padding:80px 40px;text-align:center;}
-h2{margin-bottom:30px;color:#2e7d32;font-size:32px;}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-.card:hover{transform:translateY(-8px);}
-
-.card img{width:100%;height:220px;object-fit:cover;}
-.card h3{padding:15px;}
-.card p{padding:0 15px 10px;}
-.card a{
-display:block;margin:10px;padding:10px;
-background:#2e7d32;color:white;text-decoration:none;border-radius:8px;
-}
-
-.benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
-.benefit{background:white;padding:20px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,0.1);}
-
-.cta{background:#2e7d32;color:white;padding:70px 20px;}
-
-footer{background:#1b5e20;color:white;padding:30px;text-align:center;}
-
-.whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:white;
-padding:15px;border-radius:50%;font-size:25px;text-decoration:none;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivero Camuendo Cañar - Plantas de Calidad Premium</title>
+    <meta name="description" content="Vivero Camuendo Cañar - Especialistas en plantas ornamentales, frutales y medicinales de alta calidad. Envíos a todo el Ecuador.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>Vivero Camuendo</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<header>
-<img src="logo.png">
-<nav>
-<a href="#inicio">Inicio</a>
-<a href="#productos">Productos</a>
-<a href="#beneficios">Beneficios</a>
-<a href="#contacto">Contacto</a>
-</nav>
-</header>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Vivero Camuendo Cañar</h1>
+            <p class="hero-subtitle">Plantas de Calidad Premium para tu Hogar y Jardín</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar Ahora</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
 
-<section class="hero" id="inicio">
-<h1>Convierte tu espacio en vida 🌿</h1>
-<p>Plantas reales • Asesoría • Compra rápida por WhatsApp</p>
-<a href="https://wa.me/593XXXXXXXXX" class="btn">Comprar ahora</a>
-</section>
+    <!-- Nosotros -->
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="nosotros-content">
+                <div class="nosotros-text">
+                    <h3>Tu Vivero de Confianza en Cañar</h3>
+                    <p>Con más de 10 años de experiencia, Vivero Camuendo se especializa en la producción de plantas ornamentales, frutales y medicinales de alta calidad.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Envíos a todo el Ecuador</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-seedling"></i>
+                            <span>Plantas 100% orgánicas</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Garantía de calidad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nosotros-image">
+                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=500&h=400&fit=crop" alt="Vivero Camuendo">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="beneficios">
-<h2>Por qué elegirnos</h2>
-<div class="benefits">
-<div class="benefit">🌱 Plantas sanas y seleccionadas</div>
-<div class="benefit">🚚 Entrega rápida</div>
-<div class="benefit">💬 Asesoría personalizada</div>
-<div class="benefit">🌿 Adaptadas al clima local</div>
-</div>
-</section>
+    <!-- Productos -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <img src="https://images.unsplash.com/photo-1585320700420-fae47171b3a0?w=400&h=300&fit=crop" alt="Orquídeas">
+                    <div class="producto-info">
+                        <h3>Orquídeas Premium</h3>
+                        <p class="precio">$15.00 - $45.00</p>
+                        <p>Variedades exóticas con floración garantizada.</p>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop" alt="Frutales">
+                    <div class="producto-info">
+                        <h3>Frutales Enanos</h3>
+                        <p class="precio">$25.00 - $80.00</p>
+                        <p>Perfectos para jardines y terrazas.</p>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <img src="https://images.unsplash.com/photo-1580894908361-9679e9228d58?w=400&h=300&fit=crop" alt="Suculentas">
+                    <div class="producto-info">
+                        <h3>Suculentas y Cactus</h3>
+                        <p class="precio">$8.00 - $25.00</p>
+                        <p>Fáciles de cuidar, ideales para interiores.</p>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <img src="https://images.unsplash.com/photo-1600244336494-4d43e08c6d3f?w=400&h=300&fit=crop" alt="Plantas Medicinales">
+                    <div class="producto-info">
+                        <h3>Plantas Medicinales</h3>
+                        <p class="precio">$12.00 - $35.00</p>
+                        <p>Para tu salud y bienestar natural.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="productos">
-<h2>Catálogo</h2>
-<div class="grid">
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <div class="contacto-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Camuendo, Cañar - Ecuador</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+593 99 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>viverocamuendo@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun-Sáb: 8:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contacto-form">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="tel" placeholder="Tu teléfono" required>
+                    <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
-<h3>Plantas Ornamentales</h3>
-<p>Perfectas para interiores</p>
-<a href="https://wa.me/593XXXXXXXXX?text=Quiero plantas ornamentales">Comprar</a>
-</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-seedling"></i>
+                    <div>
+                        <h3>Vivero Camuendo</h3>
+                        <p>Plantas de calidad para tu hogar</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vivero Camuendo Cañar. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1524593166156-312f362cada0">
-<h3>Frutales</h3>
-<p>Para cultivar en casa</p>
-<a href="https://wa.me/593XXXXXXXXX?text=Quiero frutales">Comprar</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1509420316987-d27c1d8a6e6f">
-<h3>Suculentas</h3>
-<p>Fáciles de cuidar</p>
-<a href="https://wa.me/593XXXXXXXXX?text=Quiero suculentas">Comprar</a>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2>Testimonios</h2>
-<p>"Excelente calidad y atención"</p>
-<p>"Mi casa cambió completamente 🌿"</p>
-</section>
-
-<section class="cta">
-<h2>Empieza hoy tu espacio verde</h2>
-<a href="https://wa.me/593XXXXXXXXX" class="btn">Escríbenos ahora</a>
-</section>
-
-<section id="contacto">
-<h2>Contacto</h2>
-<p>📍 Ecuador</p>
-<p>📞 +593 XXX XXX XXX</p>
-</section>
-
-<footer>
-<p>© 2026 Vivero Camuendo</p>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/593XXXXXXXXX">💬</a>
-
+    <script src="script.js"></script>
 </body>
 </html>
