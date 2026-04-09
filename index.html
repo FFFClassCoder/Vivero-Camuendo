@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivero Camuendo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family:'Poppins', sans-serif; background:#f5f7f6;}
+
+/* NAV */
+header {
+    position: sticky;
+    top:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+header img {width:55px;}
+
+nav a {
+    margin:0 10px;
+    text-decoration:none;
+    color:#2e7d32;
+    font-weight:500;
+}
+
+/* HERO */
+.hero {
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e') center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1 {font-size:45px;}
+.hero p {margin:15px 0;}
+
+.btn {
+    background:#4caf50;
+    padding:12px 25px;
+    border-radius:25px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+/* SECTIONS */
+section {padding:60px 30px; text-align:center;}
+h2 {margin-bottom:25px; color:#2e7d32;}
+
+/* BENEFICIOS */
+.benefits {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.benefit {
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* PRODUCTOS */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card {
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3 {padding:10px;}
+
+.card a {
+    display:block;
+    margin:10px;
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+/* TESTIMONIOS */
+.testimonial {
+    background:white;
+    padding:20px;
+    margin:10px;
+    border-radius:10px;
+}
+
+/* CTA */
+.cta {
+    background:#2e7d32;
+    color:white;
+    padding:50px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:25px;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer {
+    background:#1b5e20;
+    color:white;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png">
+    <nav>
+        <a href="#productos">Plantas</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Transforma tu hogar con plantas 🌿</h1>
+    <p>Compra fácil por WhatsApp • Entrega rápida • Plantas de calidad</p>
+    <a href="https://wa.me/593XXXXXXXXX" class="btn">Comprar ahora</a>
+</section>
+
+<!-- BENEFICIOS -->
+<section id="beneficios">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="benefits">
+        <div class="benefit">🌱 Plantas saludables y seleccionadas</div>
+        <div class="benefit">🚚 Entrega rápida</div>
+        <div class="benefit">💬 Asesoría personalizada</div>
+        <div class="benefit">🌿 Adaptadas al clima local</div>
+    </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos">
+    <h2>Plantas disponibles</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+            <h3>Plantas Ornamentales</h3>
+            <a href="https://wa.me/593XXXXXXXXX?text=Hola quiero plantas ornamentales">
+                Comprar por WhatsApp
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1524593166156-312f362cada0">
+            <h3>Plantas Frutales</h3>
+            <a href="https://wa.me/593XXXXXXXXX?text=Hola quiero plantas frutales">
+                Comprar por WhatsApp
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509420316987-d27c1d8a6e6f">
+            <h3>Suculentas</h3>
+            <a href="https://wa.me/593XXXXXXXXX?text=Hola quiero suculentas">
+                Comprar por WhatsApp
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section>
+    <h2>Clientes felices</h2>
+    <div class="testimonial">“Las plantas llegaron en perfecto estado 🌿”</div>
+    <div class="testimonial">“Excelente atención y asesoría”</div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+    <h2>¿Listo para tener tu planta?</h2>
+    <a href="https://wa.me/593XXXXXXXXX" class="btn">Escríbenos ahora</a>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Ecuador</p>
+    <p>📞 +593 XXX XXX XXX</p>
+</section>
+
+<footer>
+    <p>© 2026 Vivero Camuendo</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/593XXXXXXXXX">💬</a>
+
+</body>
+</html>
